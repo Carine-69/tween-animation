@@ -1,5 +1,22 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Tween Animation App',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const TweenAnimationScreen(),
+    );
+  }
+}
+
 class TweenAnimationScreen extends StatefulWidget {
   const TweenAnimationScreen({Key? key}) : super(key: key);
 
